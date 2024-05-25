@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.human-image {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.eye {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-eye {
+    top: 41%;
+    left: 68%;
+}
+
+.right-eye {
+    top: 50%;
+    right: 8%;
+}
+
+.pupil {
+    width: 27px;
+    height: 27px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #000;
+    transition: transform 0.1s;
+}
+
+.me {
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 900px;
+    text-align: center;
+    padding: 40px;
+    background: rgba(243, 200, 9, 0.4);
+    border-radius: 10px;
+}
+
+.me p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Typewriter effect */
+#typewriter-text {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 5.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
